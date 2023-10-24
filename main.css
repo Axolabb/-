@@ -1,0 +1,93 @@
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+    transition: 0.3s ease-in;
+}
+.black {
+    background-color: rgb(211, 211, 211);
+    transition: 0.3s ease-out;
+}
+.button {
+    height: 200px;
+    width: 400px;
+    border-radius: 50px;
+    background-color: rgb(154, 154, 255);
+    color: rgb(241, 248, 255);
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    left: 0;
+}
+.container {
+    height: 400px;
+    width: 800px;
+    display: flex;
+    position: absolute;
+    background-color: rgba(134, 134, 134, 0.897);
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in;
+}
+.cont--open {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.3s ease-out;
+    transform: translateY(-20px);
+}
+.youtube {
+    color: rgb(241, 248, 255);
+    background-color: rgb(224, 94, 94);
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+.telegram {
+        color: rgb(241, 248, 255);
+        background-color: rgb(94, 183, 224);
+        height: 200px;
+        width: 200px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+}
+.vk {
+        color: rgb(241, 248, 255);
+        background-color: rgb(94, 124, 224);
+        height: 200px;
+        width: 200px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+}
+.x {
+        color: rgb(209, 209, 209);
+        background-color: rgb(128, 128, 128);
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+}
