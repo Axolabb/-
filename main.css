@@ -2,13 +2,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 150vh;
     font-family: sans-serif;
     transition: 0.3s ease-in;
+    
 }
-.black {
-    background-color: rgb(211, 211, 211);
+.bg {
+    position: fixed;
+    visibility: hidden;
+    z-index: 0;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    width: auto;
+    background-color: rgba(211, 211, 211, 0.699);
     transition: 0.3s ease-out;
+}
+.bg--active {
+    visibility: visible;
+    opacity: 1;
 }
 .button {
     height: 200px;
@@ -27,7 +42,8 @@
     height: 400px;
     width: 800px;
     display: flex;
-    position: absolute;
+    position: fixed;
+    bottom: calc(50% - 200px);
     background-color: rgba(134, 134, 134, 0.897);
     border-radius: 50px;
     align-items: center;
